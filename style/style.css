@@ -7,6 +7,7 @@
 
 body {
   background: url(../assets/images/bg.gif) repeat 0 0 #efeeeb;
+  overflow-x: hidden;
 }
 
 header {
@@ -506,6 +507,39 @@ main.author div.authorContent div.aboutContent p {
   main div.simpleIntro {
     right: 5rem;
   }
+  main.loaction div.locationTitle div.titleInner h2 {
+    padding: 0 2rem;
+  }
+  main.loaction div.locationTitle div.titleInner div.content {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  main.building div.buildingIntro {
+    width: 80%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  main.history section.historyContent div.historyIntro h3 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  main.history section.historyContent div.historyIntro img {
+    width: 30vw;
+    height: 20vw;
+  }
+  main.history section.historyContent div.historyIntro-rev h3 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  main.history section.historyContent div.historyIntro-rev img {
+    width: 30vw;
+    height: 20vw;
+  }
+  main.author div.authorContent {
+    width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -536,6 +570,41 @@ main.author div.authorContent div.aboutContent p {
   }
   main div.simpleIntro {
     display: none;
+  }
+  main.loaction div.locationTitle div.titleInner div.content {
+    display: none;
+  }
+  main.building div.buildingIntro {
+    width: 90%;
+    height: 80vh;
+  }
+  main.building div.buildingIntro h3 {
+    width: 10%;
+    font-size: 1rem;
+  }
+  main.history section.historyContent div.historyIntro {
+    width: 65%;
+  }
+  main.history section.historyContent div.historyIntro img {
+    display: none;
+  }
+  main.history section.historyContent div.historyIntro-rev {
+    width: 65%;
+  }
+  main.history section.historyContent div.historyIntro-rev img {
+    display: none;
+  }
+  main.author div.authorContent {
+    width: 80%;
+    margin-top: 2rem;
+  }
+  main.author div.authorContent h3 {
+    width: 20%;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    font-size: 1.5rem;
+    font-weight: 200;
   }
 }
 /*# sourceMappingURL=style.css.map */

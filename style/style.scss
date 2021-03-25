@@ -7,6 +7,7 @@
 
 body {
     background: url(../assets/images/bg.gif) repeat 0 0 #efeeeb;
+    overflow-x: hidden;
 }
 
 header {
@@ -207,7 +208,6 @@ main.loaction {
 main.building {
     width: 100%;
 
-    // title
     div.buildBg {
 
         background: url(../assets/images/build-bg.jpg) center center no-repeat;
@@ -435,6 +435,70 @@ main.author {
             right: 5rem;
         }
     }
+
+    //location
+    main.loaction {
+
+        div.locationTitle {
+
+            div.titleInner {
+                h2 {
+                    padding: 0 2rem;
+                }
+
+                div.content {
+                    width: 400px;
+                    height: 400px;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    //building
+    main.building {
+        div.buildingIntro {
+            width: 80%;
+            box-sizing: border-box;
+        }
+    }
+
+    main.history {
+        section.historyContent {
+            div.historyIntro {
+                h3 {
+                    font-size: 2rem;
+                    margin-left: 0;
+                }
+
+                img {
+                    width: 30vw;
+                    height: 20vw;
+                }
+            }
+
+            div.historyIntro-rev {
+                h3 {
+                    font-size: 2rem;
+                    margin-left: 0;
+                }
+
+                img {
+                    width: 30vw;
+                    height: 20vw;
+                }
+            }
+        }
+    }
+
+    // author
+    main.author {
+
+        div.authorContent {
+            width: 80%;
+        }
+
+    }
 }
 
 @media (max-width: 768px) {
@@ -464,5 +528,67 @@ main.author {
         div.simpleIntro {
             display: none;
         }
+    }
+
+    // location
+    main.loaction {
+        div.locationTitle {
+            div.titleInner {
+                div.content {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    //building
+    main.building {
+        div.buildingIntro {
+            width: 90%;
+            height: 80vh;
+
+            h3 {
+                width: 10%;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    // history
+    main.history {
+        section.historyContent {
+            div.historyIntro {
+                width: 65%;
+
+                img {
+                    display: none;
+                }
+            }
+
+            div.historyIntro-rev {
+                width: 65%;
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // author
+    main.author {
+
+        div.authorContent {
+            width: 80%;
+            margin-top: 2rem;
+
+            h3 {
+                width: 20%;
+                writing-mode: vertical-lr;
+                font-size: 1.5rem;
+                font-weight: 200;
+            }
+        }
+
     }
 }
