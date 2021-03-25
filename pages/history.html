@@ -4,66 +4,143 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>大阪市簡介</title>
+    <meta name="robots" content="index, follow" />
+    <title>著名歷史 | 大阪市簡介</title>
     <meta name="description" content="介紹大阪地理與文史" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- goole font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- icon -->
     <link href="/assets/font-css/all.css"" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css" />
+    <!-- Bootstrap4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <div class="bgWrap"></div>
-    <header>
-      <!-- 標題 -->
-      <h1 class="headertitle">大阪簡介</h1>
-      <h3 class="headertext">大阪地理與文史</h3>
-    </header>
     <!-- 導覽列 -->
-    <nav>
-      <ul>
-        <li><a href="/Introduction-to-Osaka/index.html">首頁</a></li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/location.html"
-            ><i class="fas fa-mountain"></i> 地理位置</a
+    <header>
+      <div
+        class="title"
+        id="title"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      >
+        <h1>大阪 おおさかし</h1>
+        <h2>日本第二大都會</h2>
+      </div>
+      <nav data-aos="fade-down" data-aos-duration="1500">
+        <ul>
+          <li>
+            <a href="../index.html">首頁</a>
+          </li>
+          <li>
+            <a href="../pages/location.html"
+              ><i class="fas fa-mountain"></i> 地理位置</a
+            >
+          </li>
+          <li>
+            <a href="../pages/building.html"
+              ><i class="fas fa-torii-gate"></i> 古今建築</a
+            >
+          </li>
+          <li>
+            <a href="../pages/history.html"
+              ><i class="fas fa-book"></i> 今昔歷史</a
+            >
+          </li>
+          <li>
+            <a href="../pages/author.html"
+              ><i class="fas fa-user-edit"></i> 關於作者</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--主要內容-->
+    <main class="history">
+      <div
+        class="historyTitle"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="3000"
+      >
+        <h2>今昔歷史</h2>
+      </div>
+      <section class="historyContent">
+        <div class="historyIntro">
+          <h3 data-aos="fade-left" data-aos-duration="1500">古代歷史</h3>
+          <p
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="1500"
           >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/building.html"
-            ><i class="fas fa-torii-gate"></i> 古今建築</a
+            大阪歷史悠久，在森之宮附近發現的遺跡證明大阪自繩文時代中期就開始有人居住。593年時，聖德太子在大阪修建四天王寺，這是日本最早的佛教寺院之一。7世紀中期，在大化改新之後，當時的政府在大阪修建難波長柄豐埼宮，定大阪為難波京，使得大阪一度成為日本的首都。
+          </p>
+
+          <img
+            src="../assets/images/history1.jpg"
+            class="rounded"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="1500"
+          />
+        </div>
+        <div class="historyIntro historyIntro-rev">
+          <h3 data-aos="fade-right" data-aos-duration="1500">近代歷史</h3>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="1500"
           >
-        </li>
-        <li>
-          <a class="avtive" href="/history.html"
-            ><i class="fas fa-book"></i> 著名歷史</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/author.html"
-            ><i class="fas fa-user-edit"></i> 關於作者</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <!-- 主要內容 -->
-    <main>
-      <section class="history">
-        <h3>古代歷史</h3>
-        <br />
-        <p>
-          大阪歷史悠久，在森之宮附近發現的遺跡證明大阪自繩文時代中期就開始有人居住。古墳時代時，大阪地區因河內湖的湖水淡化變得適合耕作。加上臨海的地理環境使得大阪成為貿易港口。在5世紀時，仁德天皇在大阪修建難波高津宮。593年時，聖德太子在大阪修建四天王寺，這是日本最早的佛教寺院之一。7世紀中期，在大化改新之後，當時的政府在大阪修建難波長柄豐埼宮，定大阪為難波京，使得大阪一度成為日本的首都。
-        </p>
-        <br />
-        <h3>近代歷史</h3>
-        <br />
-        <p>
-          自1970年代中期之後，日本經濟逐漸轉換為以服務業為中心的構造。在經濟逐漸服務業化的同時，東京一極集中的趨勢也日益明顯。眾多大阪企業將其總部搬至東京，顯示出大阪經濟地位相對降低。大阪市在近年亦有多個都市更新計劃，如梅田地區大阪站北地區再開發計劃的GRAND
-          FRONT
-          OSAKA、以及阿倍野地區的阿倍野再開發事業的阿倍野Harukas，其中阿倍野Harukas在2014年啟用後成為日本第一高樓，顯示在經過長期蕭條之後，大阪市經濟在一些領域已開始好轉。2018年，大阪市成功申辦世界博覽會，這是大阪市首度舉辦世界博覽會，也是大阪府繼1970年大阪世博之後再次舉辦世界博覽會，主場地預定設於大阪市此花區的人工島夢洲。
-        </p>
+            自1970年代中期之後，日本經濟逐漸轉換為以服務業為中心的構造。在經濟逐漸服務業化的同時，東京一極集中的趨勢也日益明顯。眾多大阪企業將其總部搬至東京。2018年，大阪市成功申辦世界博覽會，這是大阪市首度舉辦世界博覽會，也是大阪府繼1970年大阪世博之後再次舉辦世界博覽會，主場地預定設於大阪市此花區的人工島夢洲。
+          </p>
+          <img
+            src="../assets/images/history2.jpg"
+            class="rounded"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="1500"
+          />
+        </div>
       </section>
+      <a href="#title" id="toTop">
+        <img src="../assets/images/toTop.svg" id="toTop" />
+      </a>
     </main>
+
+    <!-- Bootstrap4 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

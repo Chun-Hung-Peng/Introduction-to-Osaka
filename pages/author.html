@@ -4,56 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>大阪市簡介</title>
+    <meta name="robots" content="index, follow" />
+    <title>關於作者 | 大阪市簡介</title>
     <meta name="description" content="介紹大阪地理與文史" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- goole font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- icon -->
     <link href="/assets/font-css/all.css"" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css" />
+    <!-- Bootstrap4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <div class="bgWrap"></div>
-    <header>
-      <!-- 標題 -->
-      <h1 class="headertitle">大阪簡介</h1>
-      <h3 class="headertext">大阪地理與文史</h3>
-    </header>
     <!-- 導覽列 -->
-    <nav>
-      <ul>
-        <li><a href="/Introduction-to-Osaka/index.html">首頁</a></li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/location.html"
-            ><i class="fas fa-mountain"></i> 地理位置</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/building.html"
-            ><i class="fas fa-torii-gate"></i> 古今建築</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/history.html"
-            ><i class="fas fa-book"></i> 著名歷史</a
-          >
-        </li>
-        <li>
-          <a class="avtive" href="/Introduction-to-Osaka/pages/author.html"
-            ><i class="fas fa-user-edit"></i> 關於作者</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <!-- 主要內容 -->
-    <main>
-      <section class="author">
-        <h3>作者與本網頁</h3>
-        <br />
-        <p>此網頁單純為練習用網站，並非商業用途，內容為網路上蒐集。</p>
-      </section>
+    <header>
+      <div
+        class="title"
+        id="title"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      >
+        <h1>大阪 おおさかし</h1>
+        <h2>日本第二大都會</h2>
+      </div>
+      <nav data-aos="fade-down" data-aos-duration="1500">
+        <ul>
+          <li>
+            <a href="../index.html">首頁</a>
+          </li>
+          <li>
+            <a href="../pages/location.html"
+              ><i class="fas fa-mountain"></i> 地理位置</a
+            >
+          </li>
+          <li>
+            <a href="../pages/building.html"
+              ><i class="fas fa-torii-gate"></i> 古今建築</a
+            >
+          </li>
+          <li>
+            <a href="../pages/history.html"
+              ><i class="fas fa-book"></i> 今昔歷史</a
+            >
+          </li>
+          <li>
+            <a href="../pages/author.html"
+              ><i class="fas fa-user-edit"></i> 關於作者</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--主要內容-->
+    <main class="author">
+      <div class="authorContent">
+        <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="3000">
+          作者與本網頁
+        </h3>
+        <div
+          class="aboutContent"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-delay="3000"
+        >
+          <p>此網站單純為練習用網站</p>
+          <p>並非商業或宣導用途，史事與內容皆為公開網站內容</p>
+          <p>若有不符或誤植敬請見諒</p>
+        </div>
+      </div>
     </main>
+
+    <!-- Bootstrap4 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

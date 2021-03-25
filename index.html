@@ -5,72 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <title>大阪市簡介</title>
+    <title>首頁 | 大阪市簡介</title>
     <meta name="description" content="介紹大阪地理與文史" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- goole font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- icon -->
     <link href="/assets/font-css/all.css"" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrap4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <div class="bgWrap"></div>
-    <header>
-      <!-- 標題 -->
-      <h1 class="headertitle">大阪簡介</h1>
-      <h3 class="headertext">大阪地理與文史</h3>
-    </header>
     <!-- 導覽列 -->
-    <nav>
-      <ul>
-        <li>
-          <a class="avtive" href="/Introduction-to-Osaka/">首頁</a>
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/location.html"
-            ><i class="fas fa-mountain"></i> 地理位置</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/building.html"
-            ><i class="fas fa-torii-gate"></i> 古今建築</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/history.html"
-            ><i class="fas fa-book"></i> 著名歷史</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/author.html"
-            ><i class="fas fa-user-edit"></i> 關於作者</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <!-- 主要內容 -->
+    <header>
+      <div
+        class="title"
+        id="title"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      >
+        <h1>大阪 おおさかし</h1>
+        <h2>日本第二大都會</h2>
+      </div>
+      <nav data-aos="fade-down" data-aos-duration="1500">
+        <ul>
+          <li>
+            <a href="../index.html">首頁</a>
+          </li>
+          <li>
+            <a href="../pages/location.html"
+              ><i class="fas fa-mountain"></i> 地理位置</a
+            >
+          </li>
+          <li>
+            <a href="../pages/building.html"
+              ><i class="fas fa-torii-gate"></i> 古今建築</a
+            >
+          </li>
+          <li>
+            <a href="../pages/history.html"
+              ><i class="fas fa-book"></i> 今昔歷史</a
+            >
+          </li>
+          <li>
+            <a href="../pages/author.html"
+              ><i class="fas fa-user-edit"></i> 關於作者</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--主要內容-->
     <main>
-      <section class="left">
-        <img src="./assets/images/OsakaCastle.jpg" alt="OsakaCastle" />
-      </section>
-      <section class="right">
-        <h3>簡介</h3>
-        <br />
+      <div
+        class="simpleIntro"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="3000"
+      >
+        <h2>大阪城</h2>
+        <h2>通天閣新世界</h2>
+        <h2>道頓堀商店街</h2>
+        <h2>大阪環球影城</h2>
+      </div>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-interval="4000"
+        data-ride="carousel"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/carousel1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/carousel2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/carousel3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <div class="introContent" data-aos="fade-up" data-aos-duration="2000">
+        <h2>大阪簡介</h2>
         <p>
           大阪在人口數和經濟發展上被東京拉開距離，但仍然是西日本的最大都市和經濟中心。除了經濟之外，大阪也以其獨特的庶民文化而著稱。今日的大阪和東京並列為日本最具代表性的大都市，也是在世界具有知名度的國際性都市。
         </p>
-        <br />
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104994.94918623894!2d135.41602447974847!3d34.67762336971528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6553406e2e1%3A0xc55bc16ee46a2fe7!2z5pel5pys5aSn6Ziq5bqc5aSn6Ziq5biC!5e0!3m2!1szh-TW!2stw!4v1615438006771!5m2!1szh-TW!2stw"
-          width="300"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
+      </div>
     </main>
+    <div
+      class="text-center"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-anchor-placement="center-bottom"
+    >
+      <img src="./assets/images/scenery1.jpg" class="rounded" alt="..." />
+      <img src="./assets/images/scenery2.jpg" class="rounded" alt="..." />
+      <img src="./assets/images/scenery3.jpg" class="rounded" alt="..." />
+      <a href="#title" id="toTop">
+        <img src="../assets/images/toTop.svg" id="toTop" />
+      </a>
+    </div>
+
+    <!-- Bootstrap4 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

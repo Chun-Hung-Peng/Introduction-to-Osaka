@@ -4,73 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>大阪簡介</title>
+    <meta name="robots" content="index, follow" />
+    <title>地理位置 | 大阪市簡介</title>
     <meta name="description" content="介紹大阪地理與文史" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- goole font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- icon -->
     <link href="/assets/font-css/all.css"" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css" />
+    <!-- Bootstrap4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <div class="bgWrap"></div>
-    <header>
-      <!-- 標題 -->
-      <h1 class="headertitle">大阪簡介</h1>
-      <h3 class="headertext">大阪地理與文史</h3>
-    </header>
     <!-- 導覽列 -->
-    <nav>
-      <ul>
-        <li><a href="/Introduction-to-Osaka/index.html">首頁</a></li>
-        <li>
-          <a class="avtive" href="/Introduction-to-Osaka/pages/location.html"
-            ><i class="fas fa-mountain"></i> 地理位置</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/building.html"
-            ><i class="fas fa-torii-gate"></i> 古今建築</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/history.html"
-            ><i class="fas fa-book"></i> 著名歷史</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/author.html"
-            ><i class="fas fa-user-edit"></i> 關於作者</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <!-- 主要內容 -->
-    <main>
-      <section class="left">
-        <h3>地理位置</h3>
-        <br />
-        <p>
-          大阪市位於大阪府中部的大阪灣沿岸地區，面積223平方公里，在政令指定都市中排名第17位，僅大於埼玉市、堺市和川崎市。市區大部分位於大阪平原上。大阪平原是一座沖積平原，地勢平坦。大阪市東部的上町台地則是市內地勢較高的地區，北起大阪城一帶，南至住吉大社附近，寬度約2至3公里，長度超過10公里，是一座沖積台地。
+    <header>
+      <div
+        class="title"
+        id="title"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      >
+        <h1>大阪 おおさかし</h1>
+        <h2>日本第二大都會</h2>
+      </div>
+      <nav data-aos="fade-down" data-aos-duration="1500">
+        <ul>
+          <li>
+            <a href="../index.html">首頁</a>
+          </li>
+          <li>
+            <a href="../pages/location.html"
+              ><i class="fas fa-mountain"></i> 地理位置</a
+            >
+          </li>
+          <li>
+            <a href="../pages/building.html"
+              ><i class="fas fa-torii-gate"></i> 古今建築</a
+            >
+          </li>
+          <li>
+            <a href="../pages/history.html"
+              ><i class="fas fa-book"></i> 今昔歷史</a
+            >
+          </li>
+          <li>
+            <a href="../pages/author.html"
+              ><i class="fas fa-user-edit"></i> 關於作者</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--主要內容-->
+    <main class="loaction">
+      <div
+        class="locationTitle"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="3000"
+      >
+        <div class="titleInner">
+          <h2>地理位置</h2>
+          <div class="content"></div>
+        </div>
+      </div>
+      <div class="locationIntro">
+        <h3 data-aos="fade-down" data-aos-duration="1500">地形介紹</h3>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+          大阪市區大部分位於大阪平原上。大阪平原是一座沖積平原，地勢平坦。
+          <br />大阪市東部的上町台地則是市內地勢較高的地區，北起大阪城一帶，南至住吉大社附近，寬度約2至3公里，長度超過10公里，是一座沖積台地。
         </p>
-        <br />
-        <p>
-          為了擴大陸地面積，大阪曾多次進行填海。大阪的大規模填海開始於17世紀的新田開發。現在大阪市區面積的四分之一都來自於填海。大阪市沿海的夢洲、舞洲、咲洲等島嶼也是由填海造陸而成的人工島。
-          大阪市河流眾多，有「水都」之稱。這也使得大阪市橋樑眾多，江戶時代的大阪有「八百八橋」之稱。然而在近代，大阪的許多河道都已被填埋，用來修建公路或建築。低窪的地形導致大阪在歷史上水害頻發。江戶時代中期，幕府對原本匯入淀川的大和川進行人工改道，使其改自大阪南部入海，使得水患大幅減少。
+        <img
+          src="../assets/images/location1.jpg"
+          class="rounded"
+          alt="..."
+          data-aos="zoom-out-up"
+          data-aos-delay="3000"
+          data-aos-duration="1000"
+        />
+        <p data-aos="fade-up" data-aos-duration="1500">
+          為了擴大陸地面積，大阪曾多次進行填海，大阪的大規模填海開始於17世紀的新田開發。
+          <br />現在大阪市區面積的四分之一都來自於填海。大阪市沿海的夢洲、舞洲、咲洲等島嶼也是由填海造陸而成的人工島，而大阪市河流眾多，有「水都」之稱。
         </p>
-        <br />
-        <h3>名稱由來</h3>
-        <br />
-        現今的「大阪」名稱則出現於江戶時代，並在明治時代取代「大坂」而成為正式地名。之所以將「坂」改寫為「阪」，是因為「坂」字可拆解為「土反」，帶有不祥的含意。另一說法是，明治新政府認為「坂」字又可拆解作「士反」，也就是武士叛亂的意思，當時官員在文書上為了避諱而改用「阪」字。
-        <p></p>
-      </section>
-      <section class="right">
-        <h3>相對位置</h3>
-        <br />
-        <img src="../assets/images/OsakaLocation.jpg" alt="OsakaLocation" />
-      </section>
+      </div>
+      <div class="locationIntro">
+        <img
+          src="../assets/images/symbol.png"
+          class="img-fluid symbol"
+          alt="Responsive image"
+        />
+        <h3 data-aos="fade-down" data-aos-duration="1500">名稱由來</h3>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+          現今的「大阪」名稱則出現於江戶時代，並在明治時代取代「大坂」而成為正式地名。之所以將「坂」改寫為「阪」，是因為「坂」字可拆解為「土反」，帶有不祥的含意。另一說法是，明治新政府認為「坂」字又可拆解作「士反」，也就是武士叛亂的意思，當時官員在文書上為了避諱而改用「阪」字。
+        </p>
+        <img
+          src="../assets/images/location2.jpg"
+          class="rounded"
+          alt="..."
+          data-aos="zoom-out-up"
+          data-aos-delay="3000"
+          data-aos-duration="1000"
+        />
+      </div>
+      <a href="#title" id="toTop">
+        <img src="../assets/images/toTop.svg" id="toTop" />
+      </a>
     </main>
+
+    <!-- Bootstrap4 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

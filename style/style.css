@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 600;
+}
+
+body {
+  background: url(../assets/images/bg.gif) repeat 0 0 #efeeeb;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header div.title {
+  padding-top: 4rem;
+  background: url(../assets/images/navbar.gif) repeat-y;
+  margin-right: 15rem;
+}
+
+header div.title h1,
+header div.title h2 {
+  padding-left: 2rem;
+}
+
+header nav {
+  padding-left: 10px;
+  padding-top: 25px;
+  background: url(../assets/images/navbar.gif) no-repeat;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #121212;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav ul li a:hover {
+  opacity: 0.5;
+}
+
+a#toTop {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+}
+
+main {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+main div.simpleIntro {
+  position: absolute;
+  top: -5rem;
+  right: 15rem;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div.simpleIntro h2 {
+  background: url(../assets/images/underline.gif) repeat-y;
+  padding: 0.5rem;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-weight: 100;
+}
+
+main div.carousel {
+  width: 75vw;
+  max-height: 50vw;
+  overflow: hidden;
+  background-size: cover;
+}
+
+main div.introContent {
+  margin-top: 5rem;
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main div.introContent h2 {
+  margin-right: 2rem;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+div.text-center {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+div.text-center img {
+  max-width: 25vw;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+div.text-center img:hover {
+  opacity: 1;
+}
+
+main.loaction {
+  position: relative;
+}
+
+main.loaction div.locationTitle {
+  width: 100%;
+  height: 400px;
+  background: url(../assets/images/location-bg.jpg);
+  background-position: center bottom;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.loaction div.locationTitle div.titleInner {
+  width: 70%;
+}
+
+main.loaction div.locationTitle div.titleInner h2 {
+  background: url(../assets/images/mosaic.gif);
+  height: 400px;
+  padding: 0 3rem;
+  text-align: center;
+  color: #6A4028;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  float: left;
+}
+
+main.loaction div.locationTitle div.titleInner h2 h4 {
+  font-size: 1rem;
+}
+
+main.loaction div.locationTitle div.titleInner div.content {
+  background: url(../assets/images/location-circle.jpg) no-repeat;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-size: cover;
+  float: right;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+main.loaction div.locationIntro {
+  width: 70%;
+  margin-top: 5rem;
+  position: relative;
+}
+
+main.loaction div.locationIntro h3 {
+  width: 20%;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  float: left;
+  height: 100%;
+  color: #808277;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+main.loaction div.locationIntro p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+main.loaction div.locationIntro img {
+  max-width: 80%;
+}
+
+main.loaction img.symbol {
+  width: 20vw;
+  position: absolute;
+  top: -20vw;
+  left: -20vw;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+main.building {
+  width: 100%;
+}
+
+main.building div.buildBg {
+  background: url(../assets/images/build-bg.jpg) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.building div.buildBg div.buildTitle {
+  background-color: white;
+  opacity: 0.92;
+  width: 40%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.building div.buildingTitle {
+  width: 100%;
+  height: 400px;
+  background: url(../assets/images/location-bg.jpg);
+  background-position: center bottom;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.building div.buildingTitle div.titleInner {
+  width: 70%;
+}
+
+main.building div.buildingTitle div.titleInner h2 {
+  background: url(../assets/images/mosaic.gif);
+  height: 400px;
+  padding: 0 3rem;
+  text-align: center;
+  color: #6A4028;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  float: left;
+}
+
+main.building div.buildingTitle div.titleInner div.content {
+  background: url(../assets/images/location-circle.jpg) no-repeat;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-size: cover;
+  float: right;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+main.building div.buildingIntro {
+  width: 70%;
+  margin-top: 5rem;
+  position: relative;
+}
+
+main.building div.buildingIntro h3 {
+  width: 20%;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  float: left;
+  height: 100%;
+  color: #808277;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+main.building div.buildingIntro p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+main.building div.buildingIntro img {
+  max-width: 80%;
+}
+
+main.building img.symbol {
+  width: 20vw;
+  position: absolute;
+  top: -20vw;
+  left: -20vw;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+main.history {
+  width: 100%;
+}
+
+main.history div.historyTitle {
+  width: 100%;
+  height: 600px;
+  background: url(../assets/images/history-bg.jpg);
+  background-color: black;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.history div.historyTitle h2 {
+  height: 400px;
+  text-align: center;
+  color: black;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-weight: 300;
+}
+
+main.history section.historyContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.history section.historyContent div.historyIntro {
+  width: 80%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5rem;
+}
+
+main.history section.historyContent div.historyIntro h3,
+main.history section.historyContent div.historyIntro p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+main.history section.historyContent div.historyIntro p {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  line-height: 2rem;
+}
+
+main.history section.historyContent div.historyIntro h3 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+main.history section.historyContent div.historyIntro img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  height: 100%;
+}
+
+main.history section.historyContent div.historyIntro-rev {
+  margin-bottom: 2rem;
+}
+
+main.history section.historyContent div.historyIntro-rev h3,
+main.history section.historyContent div.historyIntro-rev p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+main.history section.historyContent div.historyIntro-rev h3 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+main.history section.historyContent div.historyIntro-rev p {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+main.history section.historyContent div.historyIntro-rev img {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+main.author {
+  width: 100%;
+}
+
+main.author div.authorContent {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main.author div.authorContent h3 {
+  width: 30%;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+main.author div.authorContent div.aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.author div.authorContent div.aboutContent p {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  header div.title {
+    padding-top: 4rem;
+    margin-right: 5rem;
+  }
+  header div.title h1,
+  header div.title h2 {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+  }
+  main div.simpleIntro {
+    right: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header div.title {
+    padding-top: 1rem;
+    background: none;
+    margin-right: 0;
+    text-align: center;
+    width: 100vw;
+  }
+  header nav {
+    padding-left: 0;
+    background: none;
+  }
+  main {
+    margin-top: 1rem;
+  }
+  main div.simpleIntro {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -4,81 +4,180 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>大阪市簡介</title>
+    <meta name="robots" content="index, follow" />
+    <title>古今建築 | 大阪市簡介</title>
     <meta name="description" content="介紹大阪地理與文史" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- goole font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- icon -->
     <link href="/assets/font-css/all.css"" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css" />
+    <!-- Bootstrap4 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <div class="bgWrap"></div>
-    <header>
-      <!-- 標題 -->
-      <h1 class="headertitle">大阪簡介</h1>
-      <h3 class="headertext">大阪地理與文史</h3>
-    </header>
     <!-- 導覽列 -->
-    <nav>
-      <ul>
-        <li><a href="/Introduction-to-Osaka/index.html">首頁</a></li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/location.html"
-            ><i class="fas fa-mountain"></i> 地理位置</a
-          >
-        </li>
-        <li>
-          <a class="avtive" href="/Introduction-to-Osaka/building.html"
-            ><i class="fas fa-torii-gate"></i> 古今建築</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/history.html"
-            ><i class="fas fa-book"></i> 著名歷史</a
-          >
-        </li>
-        <li>
-          <a href="/Introduction-to-Osaka/pages/author.html"
-            ><i class="fas fa-user-edit"></i> 關於作者</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <!-- 主要內容 -->
+    <header>
+      <div
+        class="title"
+        id="title"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-delay="1500"
+      >
+        <h1>大阪 おおさかし</h1>
+        <h2>日本第二大都會</h2>
+      </div>
+      <nav data-aos="fade-down" data-aos-duration="1500">
+        <ul>
+          <li>
+            <a href="../index.html">首頁</a>
+          </li>
+          <li>
+            <a href="../pages/building.html"
+              ><i class="fas fa-mountain"></i> 地理位置</a
+            >
+          </li>
+          <li>
+            <a href="../pages/building.html"
+              ><i class="fas fa-torii-gate"></i> 古今建築</a
+            >
+          </li>
+          <li>
+            <a href="../pages/history.html"
+              ><i class="fas fa-book"></i> 今昔歷史</a
+            >
+          </li>
+          <li>
+            <a href="../pages/author.html"
+              ><i class="fas fa-user-edit"></i> 關於作者</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--主要內容-->
     <main class="building">
-      <section class="buildingbox">
-        <img src="../assets/images/build1.jpg" />
-        <div class="buildinginfo">
-          <h3>大阪城天守閣</h3>
-          <br />
-          <p>
-            大阪城天守閣是大阪的地標，但現在的天守閣實際上是已經是第三代天守閣。豐臣政權時期的大阪城天守閣建於1585年，主色調為黑色，在1615年的大阪夏之陣中被毀。江戶幕府時代的大阪城天守閣則修建於1626年，但在1665年被雷擊後燒毀。現在的大阪城天守閣修建於昭和初期，主色調和江戶時代的天守閣相同，都是白色，但也融合了豐臣時代大阪城天守閣的建築特徵。
-          </p>
+      <div
+        class="buildBg"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-delay="3000"
+      >
+        <div class="buildTitle">
+          <h2>古今建築</h2>
+          <p>古代と現代の建築</p>
         </div>
-      </section>
-      <section class="buildingbox">
-        <img src="../assets/images/build2.jpg" />
-        <div class="buildinginfo">
-          <h3>大阪城通天閣</h3>
+      </div>
+      <!-- builging 1 -->
+      <div class="buildingIntro">
+        <h3 data-aos="fade-down" data-aos-duration="1500">
+          大阪城天守閣
           <br />
-          <p>
-            通天閣是位於大阪市浪速區，俗稱「新世界」中央的電視塔，建於1956年。現存的通天閣其實是第2代，高100公尺。第1代通天閣模仿巴黎的艾菲爾鐵塔和凱旋門，建於1912年，當時64公尺高的通天閣是當時東洋最高的建築，猶如通天之高，因而取名有著「直通天空的閣樓」意思的通天閣，命名的是日本明治初期的儒學者藤澤南岳。
-          </p>
-        </div>
-      </section>
-      <section class="buildingbox">
-        <img src="../assets/images/build3.jpg" />
-        <div class="buildinginfo">
-          <h3>大阪城瓦斯大廈</h3>
+          おおさかじょう
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+          天守閣是大阪的地標，但現在的天守閣實際上是已經是第三代天守閣。豐臣政權時期的大阪城天守閣建於1585年，主色調為黑色，在1615年的大阪夏之陣中被毀。江戶幕府時代的大阪城天守閣則修建於1626年，但在1665年被雷擊後燒毀。
+        </p>
+        <img
+          src="../assets/images/build1.jpg"
+          class="rounded"
+          alt="..."
+          data-aos="zoom-out-up"
+          data-aos-delay="3000"
+          data-aos-duration="1000"
+        />
+        <p data-aos="fade-down" data-aos-duration="1500">
+          現在的大阪城天守閣修建於昭和初期，主色調和江戶時代的天守閣相同，都是白色，但也融合了豐臣時代大阪城天守閣的建築特徵。
+        </p>
+      </div>
+      <!-- builging 2 -->
+      <div class="buildingIntro">
+        <img
+          src="../assets/images/symbol.png"
+          class="img-fluid symbol"
+          alt="Responsive image"
+        />
+        <h3 data-aos="fade-down" data-aos-duration="1500">
+          通天閣
           <br />
-          <p>
-            大阪瓦斯大廈是御堂筋大道邊的轉角處的一幢黑白顏色對比強烈的大樓。昭和8年（1933年）投入使用。其設計者為涉及過「大阪俱樂部」和「高麗橋野村大廈」而聞名的安井武雄。位於8層的煤氣大廈食堂是一家餐館，從東京帝國飯店請來廚師製作的歐式料理曾一度讓當年的民眾無比憧憬。大廈1樓有煤氣器具展覽處和大廳，還有使用最新煤氣烹調器具的烹調學習室。這座建築物在平成15年（2003年）被列入了登記有形文化財產。
-          </p>
-        </div>
-      </section>
+          つうてんかく
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+          通天閣是位於大阪市浪速區，俗稱「新世界」中央的電視塔，建於1956年。現存的通天閣其實是第2代，高100公尺。第1代通天閣模仿巴黎的艾菲爾鐵塔和凱旋門，建於1912年，當時64公尺高的通天閣是當時東洋最高的建築，猶如通天之高，因而取名有著「直通天空的閣樓」意思的通天閣，命名的是日本明治初期的儒學者藤澤南岳。
+        </p>
+        <img
+          src="../assets/images/build2.jpg"
+          class="rounded"
+          alt="..."
+          data-aos="zoom-out-up"
+          data-aos-delay="3000"
+          data-aos-duration="1000"
+        />
+      </div>
+      <!-- builging 3 -->
+
+      <div class="buildingIntro">
+        <h3 data-aos="fade-down" data-aos-duration="1500">
+          瓦斯大廈<br />ダイビル
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="1500">
+          大阪瓦斯大廈是御堂筋大道邊的轉角處的一幢黑白顏色對比強烈的大樓。昭和8年（1933年）投入使用。其設計者為涉及過「大阪俱樂部」和「高麗橋野村大廈」而聞名的安井武雄。
+        </p>
+        <img
+          src="../assets/images/build3.jpg"
+          class="rounded"
+          alt="..."
+          data-aos="zoom-out-up"
+          data-aos-delay="3000"
+          data-aos-duration="1000"
+        />
+        <p
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          位於8層的煤氣大廈食堂是一家餐館，從東京帝國飯店請來廚師製作的歐式料理曾一度讓當年的民眾無比憧憬。大廈1樓有煤氣器具展覽處和大廳，還有使用最新煤氣烹調器具的烹調學習室。這座建築物在平成15年（2003年）被列入了登記有形文化財產。
+        </p>
+      </div>
+      <a href="#title" id="toTop">
+        <img src="../assets/images/toTop.svg" id="toTop" />
+      </a>
     </main>
+
+    <!-- Bootstrap4 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

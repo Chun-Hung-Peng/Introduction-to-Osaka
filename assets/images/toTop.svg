@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="29px" viewBox="0 0 56 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>btn_pagetop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-11" transform="translate(1.000000, 1.000000)" stroke="#838383">
+            <path d="M27,0 L0,27" id="ラインツール"></path>
+            <path d="M27,0 L54,27" id="ラインツール"></path>
+        </g>
+    </g>
+</svg>
